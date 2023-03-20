@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 73px;
+    font-family: 'Inter', sans-serif;
+}
+ul, li {
+    list-style: none;
+}
+path {
+    fill: #ECCEA7;
+    stroke: #fff;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+path:hover {
+    fill: #FA9E27;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 417px;
+    width: 375px;
+    background-color: rgba(245, 231, 211, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.estado {
+    display: flex;
+    height: 180px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+.uf {
+    background-color: rgba(250, 158, 39, 1);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sigla {
+    font-size: 2rem;
+    color: #fff;
+}
+.container-estado .sigla {
+    color: rgba(250, 158, 39, 1);
+    font-weight: 900;
+}
+.container-estado {
+    display: flex;
+    flex-direction: column;
+    padding-top: 37px;
+    gap: 8px;
+}
+.container-cidade { 
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.cidade {
+    padding: 20px 0 10px 15px;
+}
+.todas-cidades {
+    font-weight: 500;
+    padding-left: 15px;
+    column-count: 2;
+    font-size: 1rem;
+    list-style-type: none;
+}
