@@ -69,15 +69,18 @@ path:hover {
 .container-cidade { 
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    max-width: 100%;
+    overflow-y: auto;
+    max-width: 375px;
+    padding-bottom: 12px;
 }
 .cidade {
     padding: 20px 0 10px 15px;
 }
 .todas-cidades {
     font-weight: 500;
-    padding-left: 15px;
     column-count: 2;
     font-size: 1rem;
     list-style-type: none;
+    padding-left: 15px;
 }
